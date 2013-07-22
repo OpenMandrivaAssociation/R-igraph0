@@ -10,10 +10,16 @@ License:          GPLv2+
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.5.7.tar.gz
 Requires:         R-stats R-stats4 R-rgl R-tcltk R-RSQLite R-digest R-graph R-Matrix
+%ifarch i586
 Requires:         libgmp10 libxml2
+BuildRequires:    libgmp10 libxml2
+%endif
+%ifarch x86_64
+Requires:         lib64gmp10 libxml2
+BuildRequires:    lib64gmp10 libxml2
+%endif
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex
 BuildRequires:    R-stats R-stats4 R-rgl R-tcltk R-RSQLite R-digest R-graph R-Matrix
-BuildRequires:    libgmp10 libxml2
 
 %description
 Network analysis package, old, deprecated version.
