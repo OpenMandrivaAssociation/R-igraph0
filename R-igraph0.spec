@@ -7,7 +7,7 @@ Release:          1
 Summary:          Network analysis and visualization, old, deprecated package
 Group:            Sciences/Mathematics
 License:          GPLv2+
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.5.7.tar.gz
 Requires:         R-stats R-stats4 R-rgl R-tcltk R-RSQLite R-digest R-graph R-Matrix
 %ifarch i586
